@@ -1,7 +1,7 @@
 FROM isthari/hdp-base
 
 RUN apt-get update
-RUN apt-get install -y hadoop-yarn-nodemanager hadoop-mapreduce
+RUN apt-get -y install hadoop hadoop-hdfs libhdfs0 hadoop-yarn hadoop-mapreduce hadoop-client openssl
 
 ADD core-site.xml /etc/hadoop/conf/core-site.xml
 ADD yarn-site.xml /etc/hadoop/conf/yarn-site.xml

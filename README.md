@@ -1,1 +1,1 @@
-# docker-hdp-yarn-nodemanager
+# docker-cdh5-yarn-resourcemanager
